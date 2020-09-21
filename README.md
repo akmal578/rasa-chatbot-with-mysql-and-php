@@ -56,3 +56,9 @@ Then chat to the bot that you created on telegram
 
 <img src="images/ss1.PNG" width="450" >
 
+<img src="images/ss2.PNG" width="450" >
+
+<img src="images/ss3.PNG" width="500" >
+
+<img src="images/ss4.PNG" width="500" >
+
