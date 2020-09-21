@@ -54,4 +54,5 @@ Then chat to the bot that you created on telegram
 
 
 
-![](images/ss1.PNG)
+<img src="images/ss1.PNG" width="450" >
+
