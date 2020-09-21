@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+  background: url(images/workplace.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+/*logo Size and and margin for nav bar*/
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*nav button*/
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li
+{
+    display: inline-block;
+}
+
+/*.main-nav li.active a
+{
+    border: 1px solid white;
+
+}*/
+
+.main-nav li.active a
+{
+    border: 1px solid #4CAF50;
+
+}
+
+
+.main-nav li a:hover {
+    border: 1px solid Black;
+}
+
+
+.main-nav li a {
+    color: Black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+/*Black Box*/
+.formbox {
+    width: 810px;
+    height: 790px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.formbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formbox input[type = checkbox], input[type = radio] {
+    width: 15px;
+}
+
+.formbox input[type="text"], input[type="number"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.formbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.formbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.formbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.formbox a:hover {
+    color: #ffc107;
+}

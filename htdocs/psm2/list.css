@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+  background: url(images/workplace.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+/*logo Size and and margin for nav bar*/
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*nav button*/
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li
+{
+    display: inline-block;
+
+}
+
+.main-nav li.active a
+{
+    border: 1px solid #4CAF50;
+
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid Black;
+}
+
+.main-nav li a
+{
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+/*Black Box*/
+.form{
+    width: 710px;
+    height: 720px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    top: 120%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left: 190px;
+}
+
+.form input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+/*table*/
+.tab {
+
+  margin: 15% 20%;
+  overflow-y: scroll;
+  height: 250px;
+}
+
+#meja {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+  background-color: #E5E7E9;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    width: 10%;
+}
+
+th.hidden {
+    display: none;
+}
+
+td.hidden {
+    display: none;
+}
