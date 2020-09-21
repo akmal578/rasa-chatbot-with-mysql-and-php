@@ -15,9 +15,11 @@ This is a demonstration of rasa chatbot interact with user and phpmyadmin
 pip3 install rasa
 
 6. Install Spacy
-`pip3 install rasa[spacy]
-python3 -m spacy download en_core_web_md
-python3 -m spacy link en_core_web_md en`
+```text
+- pip3 install rasa[spacy]
+- python3 -m spacy download en_core_web_md
+- python3 -m spacy link en_core_web_md en`
+```
 
 7. copy folder psm2 that is inside htdocs to C:\xampp\htdocs
 
@@ -48,9 +50,9 @@ To test confidence level
 
 11. Finally to start on telegram just use:
 - `rasa run actions`
-Then open new cmd run:
+- Then open new cmd run:
 - `rasa run`
-Then chat to the bot that you created on telegram
+- Then chat to the bot that you created on telegram
 
 <img src="images/ss1.PNG" width="450" >
 
