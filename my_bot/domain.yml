@@ -1,0 +1,113 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- thanks
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- gender_entry
+- name_entry
+- search_user
+- feedback
+- out_of_scope
+- search_cuisine
+- state_type
+- city_type
+- zip_type
+
+
+entities:
+- name
+- gender
+- cuisine
+- city
+- zip
+- state
+
+slots:
+  name:
+    type: unfeaturized
+  gender:
+    type: unfeaturized
+  cuisine:
+    type: unfeaturized
+  city:
+    type: unfeaturized
+  zip:
+    type: unfeaturized
+  state:
+    type: unfeaturized
+
+responses:
+  utter_ask_name:
+  - text: Please tell me your name?
+
+  utter_ask_gender:
+  - text: Please tell me your gender?
+
+  utter_slots_value:
+  - text: "This is your information will be taken:\n - Name: {name}\n\
+      \ - Gender: {gender}\n"
+
+  utter_greet:
+  - text: "Hi, I'm a bot, you can ask me for a nice place to eat"
+
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+
+  utter_submit:
+  - text: "Do you want to submit?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Thanks, Have a nice day!"
+
+  utter_iamabot:
+  - text: "I am a bot powered by RASA."
+
+  utter_fallback:
+  - text: "Im not understand. Can you specify?"
+
+  utter_ask_feedback:
+  - text: "Please give us a feedback"
+
+  utter_ask_continue:
+  - text: "Sorry, I don't quite understand. Do you want to continue?"
+
+  utter_ask_location:
+  - text: "Then can you specify which State it is?"
+
+  utter_ask_zip:
+  - text: "Then do you want to specify Zipcode?"
+    buttons:
+    - title: "Yes"
+      payload: "/affirm"
+    - title: "No"
+      payload: "/deny"
+
+  utter_give:
+  - text: "Then give me your zip code"
+
+actions:
+- action_restart
+- action_submit
+- action_search_user
+- action_search_cuisine_state_zip
+- action_search_cuisine_state
+- action_search_cuisine_city
+- action_search_cuisine_zip
+
+forms:
+- user_form
+- health_form
