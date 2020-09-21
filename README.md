@@ -6,7 +6,7 @@ This is a demonstration of rasa chatbot interact with user and phpmyadmin
 2. Install XAMPP
 
 3. Create anaconda anvironment in anaconda command prompt 
-conda create -n rasa_env python=3.6.3
+- conda create -n rasa_env python=3.6.3
 
 4. Activate environment
 conda activate rasa_env
@@ -51,8 +51,6 @@ To test confidence level
 Then open new cmd run:
 - rasa run
 Then chat to the bot that you created on telegram
-
-
 
 <img src="images/ss1.PNG" width="450" >
 
